@@ -1,0 +1,217 @@
+ 
+body {
+    font-family: 'Inter', sans-serif;
+    /* ... lo que ya tenías ... */
+    line-height: 1.6;}
+  
+.main-content h3 {
+    font-size: 1.0rem;
+    color: #ea580c;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.main-content p {
+    font-size: 0.8rem;
+
+}
+ .cv-wrapper{
+    display:grid;
+    grid-template-columns: 90px 1fr 280px;
+    width: 850px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 1000px;
+}
+.sidebar-left{
+    background-color: orange;
+}
+.main-content {
+    padding: 30px;
+    border-left: 2px solid #c2410c; /* Grosor y color de la línea */
+    padding-left: 20px;
+}
+.sidebar-right {
+    background-color: #333;
+    color:whitesmoke;
+    padding: 20px;
+   
+}
+
+.sidebar-right img {
+width: 100% !important;
+max-width: 280px; /* Asegura que no crezca más allá de la columna */
+height: auto !important;
+display: block !important;
+object-fit: cover; 
+}
+.sidebar-right {
+    text-align: left;
+}
+.sidebar-right ul {
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+}
+.sidebar-right h2 {
+    font-size: 1.2rem;
+}
+.sidebar-right h3{ 
+    font-size: 1.0rem;      /* Títulos más pequeños y discretos */
+    color: orange;         /* Blanco sobre fondo oscuro */
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #475569; /* Un detalle visual debajo del título */
+    padding-bottom: 5px;
+
+}
+.sidebar-right p, .sidebar-right li {
+    font-size: 0.9rem;
+}
+.sidebar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+.sidebar-right li {
+    font-size: 0.85rem;
+    line-height: relative;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    position: relative;
+}
+.sidebar-right li::before{
+    content: ".";
+    color: #ea580c;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.4;
+}
+h3,h4 {
+    margin-top: 35px;
+    margin-bottom: 2px;
+}
+.cv-item{
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+
+}
+.cv-item h4{
+    margin: 0;
+    font-weight: 500;
+    color: #1e293b;
+   
+}
+   
+.cv-date {
+font-size: 10px;
+font-weight: 500;
+color: #ea580c;
+margin-top: 2px;
+margin-bottom: 10px;
+}
+.cv-estudio {
+    font-style: italic;
+    font-weight: bold;
+    color: #1e293b;
+    font-size: 14px;
+   margin-top: 1px;
+}
+.cv-experiencia h4{
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 30 px;
+    border-top: 1px solid #a5a4a4;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+
+}
+footer a{
+    color: #ea580c;
+    text-decoration: none;
+    font-weight: 500;
+    transform: color 0.3s ease;
+}
+footer a:hover {
+    color: #c2410c;
+    text-decoration: none;
+}
+.social-links {
+    text-align: left;
+    margin-top: 20px;
+}
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column; /* <-- ESTO PONE LOS ELEMENTOS UNO DEBAJO DE OTRO */
+    align-items: left;
+;    /* <-- ESTO LOS CENTRA HORIZONTALMENTE */
+    gap: 10px;
+    font-size: 10px;
+  
+}
+
+.social-links i {
+    margin-right: 8px; 
+    font-size: 1.1rem; 
+    color: orange;    
+}
+.social-links a,
+.social-links a:visited {
+    color: white;
+  ;
+  text-decoration: none;
+
+
+}
+
+
+.texto_vertical {
+   
+    
+    font-size: 1.2rem; /* Tamaño grande para que los trazos fluyan */
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    
+    color: #1e293b;
+    white-space: nowrap;
+    
+    /* Muy importante: elimina espaciado extra entre letras */
+    letter-spacing: -1px; 
+    
+    /* Sin mayúsculas forzadas para mantener la elegancia */
+    text-transform: none; 
+}
+.sidebar-left {
+    background-color: rgb(243, 136, 36); /* Naranja más elegante */
+    width: 90px; /* Hazla más delgada para que sea un acento visual */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.otros_cursos ul{
+    font-size: 0.85rem;
+    
+
+}
