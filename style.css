@@ -47,9 +47,13 @@ html {
 
 .main-content {
     padding: 15px;
-    border-left: 3px solid #EAB308;
+    /*border-left: 3px solid #EAB308;*/
     /* Grosor y color de la línea */
-    padding-left:10px;
+    border-left: 5px double  #EAB308;
+
+
+   
+    padding-left:20px;
     margin-left: 0px;
    
 
@@ -196,11 +200,15 @@ h4 {
 }
 
 .cv-date {
+    text-align: center;
     font-size: 10px;
     font-weight: 600;
     color: #475569;
     margin-top: 2px;
     margin-bottom: 10px;
+    background-color: #ebb516;
+    border-radius: 8px;
+    max-width: 120px;
 }
 
 .cv-estudio {
@@ -224,9 +232,10 @@ footer {
     background-color: #F8FAFC;
     max-width: 944px;
     margin: 0 auto;
-   
-    
 
+  
+   
+ 
 }
 
 footer a {
@@ -235,6 +244,7 @@ footer a {
     text-decoration: none;
     font-weight: 500;
     transform: color 0.3s ease;
+    
     
 }
 
@@ -272,23 +282,38 @@ footer a:hover {
 .social-links a,
 .social-links a:visited {
     color: white;
-    ;
     text-decoration: none;
+}
+.formulario { 
+    display: flex;          /* flex para centrar */
+    justify-content: center;       /* centra horizontal */
+    align-items: center;           /* centra vertical */
+    background-color: #EAB308;
+    color: #1E293B;                /* texto accesible */
+    padding: 12px 24px;        /* espacio interno */
+    font-weight: 600;
+    text-decoration: none;
+    height: 8px;
+    max-width: 80%;
+    margin: 20px auto;
+        
 }
 
 
 .texto_vertical {
    
     font-size: 2.5rem;
-    /* Tamaño grande para que los trazos fluyan */
+
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     white-space: nowrap;
-    /* Sin mayúsculas forzadas para mantener la elegancia */
+    
     text-transform:capitalize;
     color: #1E293B;
+    
    
 }
+
 .sidebar-left section div {
     display: flex;
     justify-content: center;
@@ -301,7 +326,7 @@ footer a:hover {
     /* Naranja más elegante */
     width: 100px;
     /* Hazla más delgada para que sea un acento visual */
-    height: 350px;
+    height: 450px;
     padding-top: 40px;
     display: none;
     border-radius: 0px 45px 0px 45px;
@@ -350,8 +375,27 @@ footer a:hover {
         flex: 2;
 
     }
-
+    .sidebar-left img{
+        width: 130px;
+        height: auto;
+        padding-bottom: 0px;
+     
+       
+    }
+    .sidebar-left {
+        display: flex;
+        flex-direction:column;
+        justify-content:start;
+        align-items: center;  
+    
+    }
+    
+    
 }
+
+
+
+
 
 
    
