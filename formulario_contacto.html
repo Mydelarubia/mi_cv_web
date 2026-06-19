@@ -1,71 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi formulario de contacto</title>
     <link rel="stylesheet" href="style_formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <main>
-        <form  action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="a05937f1-eb8c-4b3f-9859-24ff1fe27098">
-          <fieldset class="formulario_contacto_input">
-                <legend class="formulario_contacto">Datos de la empresa</legend>
-                    <div class="campo">
-                        <label for="Empresa">Nombre de la Empresa</label>
-                        <input type="text" id="Empresa" name="Empresa" required>
-                    </div>
-                    <div class="campo">
-                        <label for="nombre">Persona de contacto</label>
-                        <input class="formulario_contacto_input" type="text" id="nombre" name="nombre" required>
-                    </div>
-                   
-                    <div class="email_tel">
-                        <div>
-       
-                     <label for="correo">Correo electrónico</label>
-                        <input class="formulario_contacto_input" type="email" id="correo" name="recorreo" required placeholder="nombre@dominio.com">
-                </div>
-                    <div>
-                        <label for="telefono">Teléfono</label>
-                        <input class="formulario_contacto_input" type="tel" id="telefono" name="reclutador" placeholder="+34 600 000 000">
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset class="formulario_contacto_input">
-                <legend class="formulario_contacto">Mensaje</legend>
-                    <div>
-                        <label for="comentarios">Comentario</label>
-                        <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario aquí..."></textarea>
-                    </div>
-                     
-            </fieldset>
-              <fieldset class="formulario_contacto_input">
-    <legend class="formulario_contacto">Preferencias de contacto</legend>
-    
-    <div class="email_tel">
-        <div class="campo">
-            <label for="medio_contacto">Elegir una opción</label>
-            <select class="formulario_contacto_input" id="medio_contacto" name="medio_contacto">
-                <option value="email">email</option>
-                <option value="teléfono">teléfono</option>
-            </select>
-        </div>
+
+<body> 
+     <aside>
+        <div class="imagen_desktop">
+        <img src="fondo.png" alt="fondo azul oscuro con flores blancas">
+        </div> 
+    </aside>
+    <div class="logo_form">
+        <aside class="caja-blanca">
+        <img src="logo_formulario.png" alt="imagen azul con icono de telefono e email">
+    </aside>
+    <div class="caja-contenedor">
+        <header> 
+            <h1>FORMULARIO DE CONTACTO</h1>
+        </header>
+   
+  
         
-        <div class="campo">
-            <label for="horario">Horario</label>
-            <select class="formulario_contacto_input" id="horario" name="horario">
-                <option value="mañana">mañana</option>
-                <option value="tarde">tarde</option>
-            </select>
-        </div>
-    </div> 
-</fieldset>
+        <main >
+    
+       
+            <form action="https://api.web3forms.com/submit" method="POST" class="formulario_contacto">
+                <input type="hidden" name="access_key" value="a05937f1-eb8c-4b3f-9859-24ff1fe27098">
+                <fieldset class="contenedor_principal">
+                
+                <div class="campo">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" required >
+                </div>
+                <div class="campo">
+                    <label for="pcontacto">Persona de contacto</label>
+                    <input type="text" id="pcontacto" name="pcontacto" required >
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="tel" required placeholder="+34 600 000 000">
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required >
+                </div>
+            </fieldset>
 
-            <button type="submit">Enviar formulario</button>
+            <div class="contenedor_mensaje">
+                
+                <textarea class="campo_texto" id="mensaje" name="mensaje" rows="5" placeholder="Mensaje"></textarea>
 
-        </form>
-    </main>
+            </div>
+
+            <fieldset class="contenedor_preferencias">
+              
+                <div class="campo_preferencias">
+                    <label class="medio" for="medio">Selecciona medio de contacto</label>
+                    <select id="medio" name="medio">
+                        <option value="email">email</option>
+                        <option value="llamada">llamada</option>
+                        <option value="whattshap">mensaje Whattshap</option>
+                    </select>
+                </div>
+                <div class="campo_preferencias">
+                    <label for="horario">Horario</label>
+                    <select id="horario" name="horario">
+                        <option value="mañana">mañana</option>
+                        <option value="tarde">tarde</option>
+
+                    </select>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+
+
+          
+
+            </form>
+        </main>
+    </div>
+    </div>
+
+  
 </body>
+
 </html>
